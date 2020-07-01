@@ -16,12 +16,13 @@ public class SceneBuilder : MonoBehaviour
     {
         InvokeRepeating("ReEnvironment", 1.0f * 10.0f / runSpeed, 1.0f * 10.0f / runSpeed);
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 10; i++) //Sahneye yük binmemesi adına, geçilen zemin siliniyor ve ön tarafta yeni bir zemin oluşturuluyor.
         {
             Environment initialEnvironment = Instantiate(environment, new Vector3(environmentPosition, 0.5f, 10.0f), Quaternion.identity);
             environmentList.Add(initialEnvironment);
             environmentPosition += 10.0f;
         }
+
         Debug.Log(environmentList);
     }
 

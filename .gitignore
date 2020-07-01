@@ -1,6 +1,7 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-/.vs/UnityTampleRun/v16
-/.vs/Runner/v16
+# IDEs and editors
+.vs/
+obj/
+bin/
+

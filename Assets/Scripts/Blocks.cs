@@ -15,4 +15,13 @@ public class Blocks : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<Player>() != null)
+        {
+            Debug.Log("Hit");
+            GameObject.Find("Runner").GetComponent<Player>().scorePoint -= 20000;
+        }
+    }
 }

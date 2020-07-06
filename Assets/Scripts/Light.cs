@@ -19,13 +19,11 @@ public class Light : MonoBehaviour
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            Debug.Log(transform.position.z - Time.deltaTime * moveSpeed);
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - Time.deltaTime * moveSpeed);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            Debug.Log("Sol");
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + Time.deltaTime * moveSpeed);
         }
     }
